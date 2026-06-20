@@ -1,2 +1,3 @@
-# mingw.ioT.start.menu
-ioT menu start
+dissembler java decode a .byte code to view
+
+must install "radare2"
