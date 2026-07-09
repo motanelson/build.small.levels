@@ -9,18 +9,19 @@ import subprocess
 print("\033c\033[47;30m\ngive me x\n")
 a="output.txt"
 x=int(input().strip())
-if x> 10:
-     x=10
+if x> 30:
+     x=30
 print("\033[47;30m\ngive me y\n")
 
 y=int(input().strip())
-if y> 10:
-     y=10
+if y> 30:
+     y=30
 f=""
+t="0123456789ABCDEF"
 for yy in range(y):
     for xx in range(x):
-        r=int(random.random()*4) & 3
-        f=f+str(r)
+        r=int(random.random()*16) & 15
+        f=f+str(t[r])
     f=f+"\n"
 
 f1=open(a,"w")
