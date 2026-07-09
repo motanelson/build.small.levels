@@ -17,10 +17,12 @@ y=int(input().strip())
 if y> 30:
      y=30
 f=""
-t="0123456789ABCDEF"
+t="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+tt=len(t)
+t=t+t
 for yy in range(y):
     for xx in range(x):
-        r=int(random.random()*16) & 15
+        r=int(random.random()*tt)
         f=f+str(t[r])
     f=f+"\n"
 
